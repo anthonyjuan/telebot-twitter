@@ -4,7 +4,7 @@ const teleBot = require('telebot');
 const oauth = require('oauth');
 require('dotenv').config();
 
-const bot = new teleBot('378628793:AAHdHbNZpWC7eLwONQqoulGcxquuQMwJPEo');
+const bot = new teleBot(process.env.TOKEN_TELEGRAM);
 let myOauth = new oauth.OAuth(
   //using CONSUMER KEY
   'https://api.twitter.com/oauth/request_token',
